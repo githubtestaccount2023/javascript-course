@@ -1,0 +1,3 @@
+Overwrite the webpage to be empty.
+
+"document.body.innerHTML = '';"

@@ -1,0 +1,3 @@
+Overwrite the webpage using document.body.innerHTML so that the page just displays your name.
+
+"document.body.innerHTML = 'Simon';"

@@ -1,0 +1,4 @@
+We learned alert('hello'); to create a popup with the text hello. 
+Now create a popup with your name in it.
+
+"alert('Simon');"

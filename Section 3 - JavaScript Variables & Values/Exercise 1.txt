@@ -1,0 +1,5 @@
+Change the value of the todo1 variable to a number (e.g. 99) and run typeof todo1. 
+What is the type?
+
+let todo1 = 99;
+console.log(typeof todo1);    // Result is: "number"

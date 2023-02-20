@@ -1,0 +1,31 @@
+<!--Write a function toUpper that takes 1 parameter, an array of strings, 
+and console.logs a new array with all the strings capitalized.
+
+(Hint: create a new array and push onto the array. 
+Use google to learn the code for converting a string to uppercase in Javascript.
+
+Example: toUpper(['hello', 'world']); will console.log(['HELLO', 'WORLD'])-->
+
+<!---->
+
+<!DOCTYPE HTML>
+
+<HTML>
+  <HEAD>
+    <title>Exercise 1</title>
+  </HEAD>
+  <BODY>
+    <script>
+      function toUpper(stringArr) { //setting up the parameter as a list of uppercase string values (capitalized words)
+  let result = []; //create new variable with an array as its value
+
+  stringArr.forEach(function (str) { //create loop that goes through each string value in the "result" array and runs "toUpper" function 
+    result.push(str.toUpperCase()); // make each new string value add to "result" array uppercase
+  });
+
+  console.log(result); // the output of the above code is displayed in parentheses 
+}
+toUpper(['hello', 'world', 'again']); // runs function //An array is a list of values
+    </script>
+  </BODY>
+</HTML>

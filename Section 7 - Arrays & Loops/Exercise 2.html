@@ -1,0 +1,28 @@
+<!--Write a function arrayDouble that takes an array and console.logs a new array 
+with every value repeated twice.
+
+Example: arrayDouble(['bark', 'meow']); will console.log
+(['bark', 'bark', 'meow', 'meow'])-->
+
+<HTML>
+  <HEAD>
+    <title>Exercise 2</title>
+  </HEAD>
+
+  <body>
+    <script>
+      function arrayDouble(stringArr) {
+        let result = []; //The [] operator converts the expression inside the square brackets to a string
+
+  stringArr.forEach(function (str) {
+    result.push(str);
+    result.push(str);
+  });
+
+  console.log(result);
+}
+arrayDouble(['bark', 'meow']);
+    </script>
+  </body>
+  
+  </HTML>
