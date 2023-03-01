@@ -1,0 +1,25 @@
+<!--Set up a <div id="counter">0</div>, a button with the 
+label "Up", and a variable: let count = 0; so that when clicking 
+the button, the number in the div increases by 1. 
+(hint: use count = count + 1;)-->
+
+<!DOCTYPE HTML>
+
+<HTML>
+  <HEAD>
+    <title>Exercise 2</title>
+  </HEAD>
+  <BODY>
+    <div id="counter">0</div> <!--create div and give it the name "counter." This is so JavaScript can grab it and use it-->
+    <button onclick="countUp()">Up</button> <!--When button is clicked run "countUp" function-->
+    <script>
+      let count = 0;
+    
+      function countUp() {
+        count = count + 1;
+        let counter = document.getElementById('counter'); //Use div with the id "counter" 
+        counter.innerText = count; //display the current count in the "counter" div
+      }
+    </script>
+  </BODY>
+</HTML>

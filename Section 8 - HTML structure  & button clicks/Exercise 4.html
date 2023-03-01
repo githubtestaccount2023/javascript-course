@@ -1,0 +1,24 @@
+<!--Create a button that takes what's inside the textbox, 
+puts it in a div and adds the div to the page.-->
+
+<!DOCTYPE HTML>
+
+<HTML>
+  <HEAD>
+    <title>Exercise 4</title>
+  </HEAD>
+  <BODY>
+    <input type="text" id="todo-title" />
+    <button onclick="displayTitle()">Display Title</button>
+    <script>
+      function displayTitle() {
+      let textbox = document.getElementById('todo-title');
+      let title = textbox.value; //Using ".value" we can get whatever we typed out of the textbox
+
+      let div = document.createElement('div');
+      div.innerText = title;
+      document.body.appendChild(div);
+  }
+    </script>
+  </BODY>
+</HTML>

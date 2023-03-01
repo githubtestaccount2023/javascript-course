@@ -1,0 +1,27 @@
+<!--Set up a <button id="todo-button">To Do</button> 
+so that when you click the button, the text inside changes to 
+"Done" (hint: use .innerText)-->
+
+<!DOCTYPE HTML>
+
+<HTML>
+  <HEAD>
+    <title>Exercise 1</title>
+  </HEAD>
+  <BODY>
+    <button id="todo-button" onclick="changeToDone()">To do</button> <!--You can change the behaviour or appearance of an "element"
+                                                                     by adding attributes. For example, "onclick="changeToDone()" is an example of a HTML "attribute"-->
+    <script>
+      function changeToDone() {
+        let button = document.getElementById('todo-button'); //This line of code is telling the computer to get an HTML element by its id 
+        button.innerText = 'Done';
+      }
+    </script>
+  </BODY>
+</HTML>
+
+<!--HTML Attribute Syntax: <button attribute="value">..</button-->
+
+<!--Examples: <button disabled="true">..</button> AND <button onclick="code()"<...>/button>-->
+
+<!--Syntax tip: If there is nothing between the opening and closing tag than you should use "/>" which means the same thing. For example, instead of "</input>" use "/>"-->

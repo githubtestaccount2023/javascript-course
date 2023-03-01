@@ -1,0 +1,31 @@
+<!----Set up the same counter as above, but with another button 
+"Down", that decreases the count by one. 
+(hint: use count = count - 1;)-->
+
+<!DOCTYPE HTML>
+
+<HTML>
+  <HEAD>
+    <title>Exercise 3</title>
+  </HEAD>
+  <BODY>
+    <div id="counter">0</div>
+    <button onclick="countUp()">Up</button>
+    <button onclick="countDown()">Down</button>
+    <script>
+      let count = 0; //You can use the same variable for different functions
+      
+      function countUp() {
+        count = count + 1;
+        let counter = document.getElementById('counter');
+        counter.innerText = count;
+      }
+
+      function countDown() {
+        count = count - 1;
+        let counter = document.getElementById('counter');
+        counter.innerText = count;
+      }
+    </script>
+  </BODY>
+</HTML>
